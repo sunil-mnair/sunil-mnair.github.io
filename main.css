@@ -380,6 +380,7 @@ ul{
 
 @media only screen and (max-width:500px){
     .container{
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2,50vh) 100vh repeat(4,50vh auto);
         grid-template-areas: 
@@ -441,7 +442,7 @@ ul{
     }
 
     .coding-icon,.training-icon,.business-icon,.stats-icon{
-        padding-right: 10px;
+        padding-right: 2px;
     }
     .links{
         width: 75%;
