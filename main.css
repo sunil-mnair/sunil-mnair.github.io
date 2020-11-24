@@ -70,6 +70,11 @@ a{
     align-items: stretch;
 }
 
+.links > a:hover{
+    transform: scale(1.5);
+    color: darkblue;
+}
+
 .header-info{
     grid-area: header-info;
     background-color: #63a4ff;
