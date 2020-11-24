@@ -1,0 +1,82 @@
+/* Grids */
+/* Grid Container */
+/* grid-template-columns
+grid-template-rows
+grid-template-areas
+grid-template
+grid-column-gap
+grid-row-gap
+grid-gap
+justify-items
+align-items
+place-items (short-hand for justify-items and align items)
+justify-content
+align-content
+place-content
+grid-auto-columns
+grid-auto-rows
+grid-auto-flow
+grid */
+
+/* Grid Items */
+/* grid-column-start
+grid-column-end
+grid-row-start
+grid-row-end
+grid-column
+grid-row
+grid-area
+justify-self
+align-self
+place-self */
+
+body{
+    margin:0px;
+}
+.item{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    display:grid;
+    grid-template:
+    "h h h" 100px
+    "m m s" auto
+    "f f f" 80px
+    / 2.5fr 1fr 1fr;
+}
+
+.header{
+    background-color: mediumseagreen;
+    grid-area: h;
+}
+
+.main{
+    background-color: whitesmoke;
+    grid-area: m;
+}
+
+.sidebar{
+    background-color: turquoise;
+    grid-area: s;
+}
+
+.footer{
+    background-color: darkolivegreen;
+    color:white;
+    grid-area: f;
+}
+
+@media (max-width:500px){
+    .container{
+        grid-template:
+        "h" 100px
+        "s" 30px
+        "m" auto
+        "f" 80px
+    }
+}

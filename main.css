@@ -1,0 +1,359 @@
+
+
+body{
+    margin:0px;
+    background-color: lightgrey;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+:root {
+    --color2: #d67369;
+    --font1: 'Noto Sans', sans-serif;
+    --font2: 'Roboto', sans-serif;
+}
+
+.container{
+    
+    width:100%;
+    margin: auto;
+    display:grid;
+    
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,100vh);
+    grid-template-areas: 
+    "header-preview         header-info"
+    "about-me               about-me"
+    "skills-preview         skills"
+    "testimonials-preview   testimonials"
+    "publication-preview    publication"
+    "contact-left           contact-right";
+}
+
+.header-preview{
+    grid-area: header-preview;
+    background-color: white;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile{
+    width:100%;
+    height:75%;
+    background-color: var(--color2);
+    transform: translateX(100px);
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name,.title,.links{
+    color:white;
+    font-family: var(--font1);
+}
+
+.name{
+    font-size: 4em;
+}
+
+.links{
+    display:flex;
+    justify-content: space-between;
+}
+
+.header-info{
+    grid-area: header-info;
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #83eaf1 0%,  #D5F3FE 74%);
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.about-me{
+    grid-area:about-me;
+    background-color: white;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    grid-template-rows: 40vh auto;
+    grid-template-columns: 1fr 10px 1fr;
+    
+    grid-template-areas: 
+    "about-header   about-header    about-header"
+    "about-me-title about-me-divider about-me-desc";
+    
+}
+
+.about-header{
+    height:40vh;
+    grid-area:about-header;
+    background-image: url('https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.about-me-title{
+    place-self: center end;
+    padding-right: 100px;
+    font-size: 2.5em;
+    font-family: var(--font1);
+}
+
+.about-me-divider{
+    background-color: var(--color2);
+    width: 10px;
+    height:250px;
+}
+
+.about-me-divider:hover{
+    transform: scaleY(1.5);
+    transition: transform 1s ease .2s;
+    background-color: black;
+}
+
+.about-me-desc{
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+    font-family: var(--font2)
+}
+
+.color-left{
+    background-color: var(--color2);
+    display:grid;
+    justify-content: end;
+    align-items: center;
+}
+
+.skills-preview{
+    grid-area: skills-preview;
+    
+    
+}
+
+.skills-title,.publication-title{
+    place-self: center;
+    padding-right: 100px;
+    font-size: 2.5em;
+    font-family: var(--font1);
+    color:white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+ul{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+
+.skills{
+    padding-top:10%;
+    padding-bottom:10%;
+    grid-area: skills;
+    background-color: white;
+
+    display:flex;
+    flex-direction: column;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: repeat(4,1fr);
+
+    justify-content: center;
+    align-items: center;
+
+   
+    
+}
+
+.skill-desc h3{
+    margin: 5px auto;
+    font-family: var(--font1)
+}
+
+.skill-desc ul{
+    padding-bottom:20px;
+}
+
+.skill-desc li{
+    font-family: var(--font2);
+    font-size:.9em;
+} 
+
+.coding-section,.training-section,.business-section,.stats-section{
+    display:flex;
+}
+
+.coding-icon,.training-icon,.business-icon,.stats-icon{
+    place-self: center;
+    padding-right: 25px;
+}
+
+
+.testimonials-preview{
+    grid-area: testimonials-preview;
+    background-color: white;
+    display:grid;
+    justify-content: end;
+    align-items: center;
+}
+
+.testimonials-title{
+    place-self: center;
+    padding-right: 100px;
+    font-size: 2.5em;
+    font-family: var(--font1);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 5px solid var(--color2);
+    border-bottom: 5px solid var(--color2);
+}
+
+.testimonials{
+    grid-area: testimonials;
+    background-color: var(--color2);
+
+    display:flex;
+    flex-direction: column;
+    padding:50px;
+
+    padding-top:10%;
+    padding-bottom:10%;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.testimonial-name{
+    font-size:1em;
+    font-family: var(--font1);
+    padding-bottom:10px;
+}
+
+.testimonial-desc{
+    font-size:1em;
+    font-family: var(--font2);
+    color:white;
+    padding-bottom:15px;
+}
+
+
+.publication-preview{
+    grid-area:publication-preview;
+}
+
+.publication{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy{
+    padding:10px;
+    background-color: darkblue;
+    color:white;
+    border-radius: 10px;
+    font-family: var(--font2);
+}
+
+.buy:hover{
+    background-color: orange;
+    color:black;
+}
+
+.contact-left{
+    grid-area:contact-left;
+    background-color: white;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card{
+    width:100%;
+    height:75%;
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #83eaf1 0%,  #D5F3FE 74%);
+    transform: translateX(25%);
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-header,.contact-links{
+    color:black;
+}
+
+.contact-right{
+    grid-area: contact-right;
+    background-color: var(--color2)
+}
+
+.picture{
+    display:flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit: cover;
+    
+}
+
+.one,.two{
+    position: absolute;
+    border:1px solid #3C99DC;
+    border-radius: 50%;
+}
+
+.picture:hover > .one{
+    transform: rotate(-540deg);
+    
+}
+
+.picture:hover > .two{
+    transform: rotate(540deg);
+    
+}
+
+.one{
+    width:204px;
+    height:204px;
+    border-left-color: transparent;
+    transition: all 2s ease-in-out;
+    z-index:2;
+}
+.two{
+    width:208px;
+    height:208px;
+    border-right-color: transparent;
+    transition: all 2s ease-in-out;
+    z-index:1;
+}
+
