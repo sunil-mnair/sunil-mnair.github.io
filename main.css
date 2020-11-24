@@ -97,19 +97,19 @@ a{
     align-items: center;
 
     grid-template-rows: 40vh auto;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto 1fr;
     
     grid-template-areas: 
-    "about-header"
-    "about-me-section";
+    "about-header about-header about-header"
+    "about-me-title about-me-divider about-me-desc";
     
 }
 
-.about-me-section{
+/* .about-me-section{
     display:flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .about-header{
     height:40vh;
@@ -124,15 +124,14 @@ a{
     place-self: center;
     text-align: right;
     padding-right: 100px;
-    width:49%;
     font-size: 2.5em;
     font-family: var(--font1);
 }
 
 .about-me-divider{
     background-color: var(--color2);
-    width: 2%;
-    height:250px;
+    width: 10px;
+    height:50%;
 }
 
 .about-me-divider:hover{
@@ -142,7 +141,7 @@ a{
 }
 
 .about-me-desc{
-    width:49%;
+    width:80%;
     padding-left: 40px;
     padding-right: 40px;
     text-align: justify;
@@ -403,37 +402,31 @@ ul{
     }
 
     .about-me{
-        grid-template-rows: repeat(2,1fr);
-        grid-template-columns: 1fr;
-        
-        grid-template-areas: 
-       
-        "about-me-header"
-        "about-me-section";
-
-        justify-content: flex-start;
-        align-items: flex-start;
-        
-    }
-
-    .about-me-section{
+        display:flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
 
     .about-me-title{
         padding-right:0px;
-        width:100%;
+        width:80%;
         text-align: center;
+        
+
+        padding-bottom: 25px;
+        border-bottom: 10px solid var(--color2);
     }
 
     .about-me-desc{
         width:85%;
-        padding-bottom:50px;
+        padding-top: 25px;
+        align-self: flex-start;
+       
     }
 
     .about-me-divider{
-        transform: rotate(90deg);
+        /* align-self: center start; */
+        display: none;
     }
     .about-header{
         display:none;
@@ -450,5 +443,7 @@ ul{
     .coding-icon,.training-icon,.business-icon,.stats-icon{
         padding-right: 10px;
     }
-
+    .links{
+        width: 75%;
+    }
 }
