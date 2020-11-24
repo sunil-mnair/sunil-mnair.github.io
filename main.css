@@ -64,8 +64,11 @@ a{
 }
 
 .links{
+    width:50%;
+    padding-top:50px;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: stretch;
 }
 
 .header-info{
@@ -202,7 +205,7 @@ ul{
 
 .coding-icon,.training-icon,.business-icon,.stats-icon{
     place-self: center;
-    padding-right: 25px;
+    padding-right: 50px;
 }
 
 
