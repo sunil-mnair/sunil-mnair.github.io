@@ -389,6 +389,15 @@ a{
     z-index:1;
 }
 
+.contact-links{
+    width:50%;
+    padding-top:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width:500px){
     .container{
         width: 100%;
