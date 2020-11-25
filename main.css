@@ -75,7 +75,7 @@ a{
 
 .links > a:hover{
     transform: scale(1.5);
-    color: darkblue;
+    color: darkorange;
 }
 
 .header-info{
