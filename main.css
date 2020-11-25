@@ -12,6 +12,7 @@ a{
 :root {
     /* --color2: #d67369; */
     --color2: #003368;
+    /* --color2:#f17950; */
     --border-color:#D5F3FE;
     --font1: 'Noto Sans', sans-serif;
     --font2: 'Roboto', sans-serif;
@@ -147,7 +148,8 @@ a{
     padding-left: 40px;
     padding-right: 40px;
     text-align: justify;
-    font-family: var(--font2)
+    font-family: var(--font2);
+    font-size:1.1em;
 }
 
 .color-left{
@@ -197,8 +199,9 @@ a{
 
 .skill-desc{
     display:flex;
-    flex-direction:column;    
+    flex-direction:column;
 }
+
 
 .skill-desc h3{
     margin-bottom:5px;
@@ -209,7 +212,7 @@ a{
 
 .skill-desc span{
     font-family: var(--font2);
-    font-size:.9em;
+    font-size:1em;
     padding-bottom:5px;
 } 
 
@@ -219,10 +222,13 @@ a{
 
 .coding-icon,.training-icon,.business-icon,.stats-icon{
     place-self: center;
+    padding-right:50px;
     width:75px;
     color: var(--color2);
     text-align: center;
 }
+
+
 
 
 .testimonials-preview{
@@ -263,13 +269,14 @@ a{
 }
 
 .testimonial-name{
-    font-size:1em;
+    font-size:1.2em;
     font-family: var(--font1);
+    color: var(--border-color);
     padding-bottom:10px;
 }
 
 .testimonial-desc{
-    font-size:1em;
+    font-size:1.1em;
     font-family: var(--font2);
     color:white;
     padding-bottom:15px;
@@ -344,8 +351,8 @@ a{
 }
 
 .picture img{
-    width:200px;
-    height:200px;
+    width:300px;
+    height:300px;
     border-radius:50%;
     object-fit: cover;
     
@@ -368,15 +375,15 @@ a{
 }
 
 .one{
-    width:204px;
-    height:204px;
+    width:304px;
+    height:304px;
     border-left-color: transparent;
     transition: all 2s ease-in-out;
     z-index:2;
 }
 .two{
-    width:208px;
-    height:208px;
+    width:308px;
+    height:308px;
     border-right-color: transparent;
     transition: all 2s ease-in-out;
     z-index:1;
@@ -432,6 +439,7 @@ a{
         width:85%;
         padding-top: 25px;
         align-self: flex-start;
+        font-size:1em;
        
     }
 
@@ -461,11 +469,13 @@ a{
     }
     
     .testimonial-name{
-        color:var(--color2)
+        color:var(--color2);
+        font-size:1em;
     }
     
     .testimonial-desc{
         color:black;
+        font-size:1em;
         
     }
     .contact-card{
