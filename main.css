@@ -404,6 +404,12 @@ a{
         /* transform: translateY(-30%); */
     }
 
+    .name{
+        font-size: 3.5em;
+    }
+    .title{
+        font-size: 1em;
+    }
     .about-me{
         display:flex;
         flex-direction: column;
@@ -435,9 +441,31 @@ a{
         display:none;
     }
     
-    /* .skills-preview{
-        margin-top: 40%;
-    } */
+    .testimonials-preview{
+        
+        background-color: var(--color2);
+        
+        
+    }
+        
+    .testimonials-title{
+        color:white; 
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+    }
+    
+    .testimonials{
+        background-color: white;
+    }
+    
+    .testimonial-name{
+        color:var(--color2)
+    }
+    
+    .testimonial-desc{
+        color:black;
+        
+    }
     .contact-card{
         transform: translateX(0px);
         /* transform: translateY(-30%); */
@@ -450,12 +478,25 @@ a{
         width: 75%;
     }
 
-    ul{
-    /* list-style-type: none; */
-    /* padding:10px; */
-    
+   
+}
+
+@media only screen and (max-height:625px){
+
+    .container{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100vh repeat(2,150vh) 175vh repeat(2,150vh);
+    grid-template-areas: 
+    "header-preview         header-info"
+    "about-me               about-me"
+    "skills-preview         skills"
+    "testimonials-preview   testimonials"
+    "publication-preview    publication"
+    "contact-left           contact-right";
     }
-    li{
-        /* padding: 0px; */
+
+    .book{
+        max-width:300px;
     }
+
 }
