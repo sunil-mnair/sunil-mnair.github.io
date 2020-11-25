@@ -488,7 +488,8 @@ a{
         
     }
     .contact-card{
-        transform: translateX(0px) scaleY(1.2);
+        transform: translateX(0px);
+        height:85%;
         /* transform: translateY(-30%); */
     }
 
