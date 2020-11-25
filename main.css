@@ -502,7 +502,7 @@ a{
    
 }
 
-@media only screen and (max-height:625px){
+@media only screen and (max-height:625px) and (max-width:1000px){
 
     .container{
     grid-template-columns: repeat(2,1fr);
