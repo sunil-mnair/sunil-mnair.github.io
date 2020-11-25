@@ -485,7 +485,7 @@ a{
 
     .container{
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 100vh repeat(2,150vh) 175vh repeat(2,150vh);
+    grid-template-rows: 100vh 150vh 175vh 175vh repeat(2,150vh);
     grid-template-areas: 
     "header-preview         header-info"
     "about-me               about-me"
