@@ -10,7 +10,9 @@ a{
 }
 
 :root {
-    --color2: #d67369;
+    /* --color2: #d67369; */
+    --color2: #003368;
+    --border-color:#D5F3FE;
     --font1: 'Noto Sans', sans-serif;
     --font2: 'Roboto', sans-serif;
 }
@@ -187,8 +189,8 @@ a{
     color:white;
     padding-top: 50px;
     padding-bottom: 50px;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    border-top: 5px solid var(--border-color);
+    border-bottom: 5px solid var(--border-color);
 }
 
 
@@ -450,8 +452,8 @@ a{
         
     .testimonials-title{
         color:white; 
-        border-top: 5px solid black;
-        border-bottom: 5px solid black;
+        border-top: 5px solid var(--border-color);
+        border-bottom: 5px solid var(--border-color);
     }
     
     .testimonials{
