@@ -488,7 +488,7 @@ a{
         
     }
     .contact-card{
-        transform: translateX(0px);
+        transform: translateX(0px) scaleY(1.2);
         /* transform: translateY(-30%); */
     }
 
@@ -499,6 +499,21 @@ a{
         width: 75%;
     }
 
+    .picture img{
+        width:200px;
+        height:200px;
+               
+    }
+
+    .one{
+        width:204px;
+        height:204px;
+    }
+
+    .two{
+        width:208px;
+        height:208px;
+    }
    
 }
 
