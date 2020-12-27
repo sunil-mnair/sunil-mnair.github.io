@@ -442,6 +442,7 @@ a{
     }
     .title{
         font-size: 1em;
+        align-self: center;
     }
     .about-me{
         display:flex;
